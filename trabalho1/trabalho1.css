@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: orange;
+}
+
+/*barra superior*/
+
+.bar-sup {
+    font-size: 2em;
+    background-color: greenyellow;
+    padding: 30px;
+}
+
+
+/*navegador superior*/
+
+.nav-sup {
+  position: relative;
+    background-color: green;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+    z-index: 10;
+}
+
+.nav-sup> ul, .dropdown {
+    list-style: none;
+}
+
+.nav-sup> ul> li {
+    display: inline-block;
+}
+
+.dropdown>li {
+    max-height: 0px;
+    transition: max-height 800ms;
+}
+
+.nav-sup> ul> li> a, .dropdown> li> a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.nav-sup> ul> li> a:hover, .dropdown> li> a:hover {
+    color: black;
+    background-color: greenyellow;
+}
+
+.nav-sup> ul> li> a:hover+ .dropdown>li, .dropdown:hover>li {
+    max-height: 34px;
+}
+
+.dropdown {
+    background-color: green;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+/*Barra lateral esquerda*/
+
+.nav-esq {
+    background-color: greenyellow;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+}
+
+.nav-esq>ul {
+    list-style: none;
+}
+
+.nav-esq>ul>li>a {
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-esq>ul>li>a:hover {
+    background-color: orange;
+}
+
+
+/*Barra Lateral Direita*/
+
+.bar-dir {
+    text-align: center;
+    background: linear-gradient(to bottom right, greenyellow, orange);
+    box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+}
+
+.bar-dir>ul {
+    list-style: none;
+}
+
+.bar-dir>ul>li>a {
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.imagem {
+    height: 100px;
+    position: relative;
+    animation-name: passear;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/*Animação e responsividade*/
+
+@keyframes passear {
+    0% {
+        transform: rotate(0deg);
+        left: 10vw;
+        top: 10vw;
+    }
+    33% {
+        left: 46vw;
+        top: 4vw;
+    }
+    66% {
+        left: 47vw;
+        top: 35vw;
+    }
+    100% {
+        transform: rotate(720deg);
+        left: 10vw;
+        top: 10vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav-esq {
+        width: 15%;
+        height: calc(100vh - 131px);
+        float: left;
+    }
+    .conteudo {
+        float: left;
+        width: 70%;
+        height: calc(100vh - 131px);
+    }
+    .bar-dir {
+        float: left;
+        width: 15%;
+        height: calc(100vh - 131px);
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .nav-esq {
+        height: 100%;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+    .conteudo {
+        height: 100vw;
+        margin-bottom: 4px;
+    }
+    .bar-dir {
+        height: 40vw;
+    }
+}
