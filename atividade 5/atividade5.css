@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bar-sup {
+    font-size: 2em;
+    background-color: greenyellow;
+    padding: 30px;
+}
+
+.sanduiche {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.nav-esq {
+    background-color: greenyellow;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.2em;
+    float: left;
+}
+
+.nav-esq>ul {
+    list-style: none;
+}
+
+.nav-esq>ul>li>a {
+    width: 160px;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-esq>ul>li>a:hover {
+    background-color: orange;
+}
+
+.accordeon {
+    display: block;
+    border: 2px solid darkcyan;
+    display: none;
+    cursor: pointer;
+    width: 500px;
+}
+
+.cabecalho-accordeon {
+    text-align: center;
+    background-color: cyan;
+    border-radius: 5px;
+    display: block;
+}
+.corpo-accordeon {
+    border: 0px;
+    display: block;
+      border: 2px solid darkcyan;
+      border-top: 0;
+}
+
+@media screen and (max-width: 479px) {
+    .sanduiche {
+        float: right;
+        display: block;
+    }
+    .nav-esq {
+        height: 100vh;
+        margin-bottom: 4px;
+        text-align: center;
+        transition: all 800ms;
+    }
+    .corpo {
+        min-width: calc(100vw - 180px);
+        transition: all 800ms;
+    }
+    .esconder {
+        position: absolute;
+        transform: translate(-180px);
+        transition: all 800ms;
+    }
+    .esconder+ .corpo {
+        min-width: 100vw;
+        transition: all 800ms;
+    }
+    .accordeon {
+        box-sizing: border-box;
+        float: left;
+        max-width: calc(100vw - 210px);
+    }
+    .esconder+ .corpo .accordeon {
+        float: none;
+        max-width: 100vw;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .sanduiche {
+        display: none;
+    }
+    .nav-esq {
+        height: 100vh;
+        float: left;
+    }
+    .accordeon {
+        float: left;
+        width: calc(55vw);
+    }
+}

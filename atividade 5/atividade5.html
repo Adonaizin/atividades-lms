@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NomeDoSite</title>
+    <link rel="stylesheet" href="atividade5.css" charset="utf-8">
+</head>
+
+<body>
+    <nav class="nav-esq" id="menu">
+        <ul>
+            <li><a href="#"><h4>TOPICO</h4></a></li>
+            <li><a href="">sub-tópico</a></li>
+            <li><a href="">sub-tópico</a></li>
+            <li><a href="">sub-tópico</a></li>
+            <li><a href="#"><h4>OUTRO TOPICO</h4></a></li>
+            <li><a href="">sub-tópico</a></li>
+            <li><a href="">sub-tópico</a></li>
+            <li><a href="">sub-tópico</a></li>
+        </ul>
+    </nav>
+    <div class="corpo">
+
+        <header>
+            <div class="bar-sup">
+                <span>TITULO DO SITE.COM</span><span class="sanduiche" id="btn"> &#9776 </span>
+            </div>
+        </header>
+        <div class="conteudo">
+
+            <div>
+                <div class="accordeon cabecalho-accordeon" id="ac1">
+                    Accordeon 1
+                </div>
+                <div class="accordeon" id="cac1">
+                  Texto que vem dentro do accordeon pode ser esse aqui já que é apenas um exemplo mesmo... hahahhahahahahahahah
+                </div>
+            </div>
+
+
+            <div>
+                <div class="accordeon cabecalho-accordeon" id="ac2">
+                    Accordeon 2
+                </div>
+                <div class="accordeon" id="cac2">
+                    Texto que vem dentro do accordeon TAMBÉM pode ser esse aqui já que é apenas um exemplo mesmo... hahahhahahahahahahah
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var menu = document.getElementById('menu');
+        var btn = document.getElementById('btn');
+
+        var ac1 = document.getElementById('ac1');
+        var cac1 = document.getElementById('cac1');
+
+        var ac2 = document.getElementById('ac2');
+        var cac2 = document.getElementById('cac2');
+
+        btn.addEventListener("click", function() {
+            menu.classList.toggle('esconder');
+        });
+
+        ac1.addEventListener("click", function() {
+            cac1.classList.toggle('corpo-accordeon');
+            if (cac1.classList.contains('corpo-accordeon')==true) {
+              ac1.style.borderRadius='5px 5px 0 0';
+            } else {
+              ac1.style.borderRadius='5px';
+            }
+        });
+
+        ac2.addEventListener("click", function() {
+            cac2.classList.toggle('corpo-accordeon');
+            if (cac2.classList.contains('corpo-accordeon')==true) {
+              ac2.style.borderRadius='5px 5px 0 0';
+            } else {
+              ac2.style.borderRadius='5px';
+            }
+        });
+    </script>
+</body>
+
+</html>
