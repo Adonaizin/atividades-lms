@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChatWeb</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta>
+</head>
+
+<body>
+
+    <div class="casa">
+        <header class="navbar">
+            <div class="logo">
+                <a href=""><img src="saitama.png"></a>
+            </div>
+            <div class="group-name" id="nome-amigo"></div>
+            <div class="login">
+                <button id="myBtn">Entrar</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="lateral">
+                <ul class="sidebar" id="amigosList">
+
+                </ul>
+                <div class="criarGrupo">
+                  <form action="">
+                    <h3>Novo Grupo</h3>
+                    <input name="nomeGrupo" type="text" placeholder="Nome do grupo" id="newGrupo">
+                  </form>
+                  <button onclick="createGroup()">Criar</button>
+                </div>
+
+            </div>
+
+            <div class="mensagem" id="mensagem">
+
+            </div>
+            <div class="input-mensagem">
+              <form action="">
+                <textarea name="message" id="msg"></textarea>
+              </form>
+              <button onclick="sendMsg()">Enviar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>LOGIN</p>
+            <input type="text" placeholder="digite seu id" id="user">
+            <button onclick="login()">Login</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
