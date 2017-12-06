@@ -1,7 +1,16 @@
 PROFESSOR, Baixe a pasta do Trabalho 2.
+<<<<<<< HEAD
 Não sei pq via index ele não consegue executar nada...
 Execute pelo seu computador que está tudo certo.
 
 Esse foi mais difícil que do ano passado.
 
 By: Adonai.
+=======
+NÃ£o sei pq via index ele nÃ£o consegue executar nada...
+Execute pelo seu computador que estÃ¡ tudo certo.
+
+Esse foi mais difÃ­cil que do ano passado.
+
+By: Adonai.
+>>>>>>> 97d12faf66ebda4b37a42e286233c35f20df2668
