@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CompreMais</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="vsc-initialized">
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand col" href="">CompreMais</a>
+
+        <div class="dropdown col-2">
+            <button class="btn btn-primary dropdown-toggle float-right" type="button" id="entrar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entrar</button>
+            <form class="dropdown-menu p-4">
+                <div class="form-group">
+                    <label>Usuário</label>
+                    <input type="text" class="form-control is-valid" id="usuarioLogin" placeholder="Usuário">
+                    <div class="invalid-feedback">
+                        Usuário incorreto.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" class="form-control is-invalid" id="senhaLogin" placeholder="Senha">
+                    <div class="invalid-feedback">
+                        Senha incorreta.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+        </div>
+
+        <div class="dropdown col-2">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="cadastrar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cadastrar</button>
+            <form class="dropdown-menu p-4">
+                <div class="form-group">
+                    <label>Usuário</label>
+                    <input type="text" class="form-control is-valid" id="usuarioCadastro" placeholder="Usuário">
+                    <div class="invalid-feedback">
+                        Usuário já existe.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" class="form-control is-invalid" id="senhaCadastro" placeholder="Senha">
+                    <div class="invalid-feedback">
+                        Senha inválida.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Compras</span></button>
+            <div class="dropdown-menu p-2">
+                <div class="dropdown-item media">
+                    <img class="mr-3" src="img/img.png" style="width:64px;" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Produto</h5>R$23,99</div>
+                </div>
+                <div class="dropdown-item media">
+                    <img class="mr-3" src="img/img.png" style="width:64px;" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h5 class="mt-0">Produto</h5>R$23,99</div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <button type="submit" class="btn btn-primary">Finalizar</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-secondary">Sair</button>
+        </div>
+
+    </nav>
+
+    <!-- Galeria -->
+    <div class="corpo mx-auto">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/img.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto1</h4>
+                        <h5 class="card-text">R$23,99</h5>
+                        <a href="#" class="btn btn-primary">Adicionar</a> Quantidade: <input style="width:20%;" type="number" name="name" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+
+</body>
+
+</html>
